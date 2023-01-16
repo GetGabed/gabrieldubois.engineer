@@ -36,7 +36,7 @@ const Header = () => {
     return (
         <header>
             <div className="flex justify-between p-6 items-center">
-                <Link className="font-bold text-xl" href="/">Gabe.</Link>
+                <Link className="logo font-bold text-xl" href="/">Gabe.</Link>
                 {renderThemeChanger()}
             </div>
         </header>

@@ -4,11 +4,69 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
+
+
 /* From Public Directory */
-* {
+.logo {
   font-family: 'Ubuntu', sans-serif;
   src: url('/fonts/Ubuntu.ttf');
   font-style: medium;
-  font-weight: normal;
+  font-weight: 700;
   font-display: swap;
+}
+
+.marquee {
+  position: absolute;
+  width: 100vw;
+  top: 9rem;
+  left: -30rem;
+  display: flex;
+  overflow: hidden;
+  rotate: -40deg;
+  gap: 1rem;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+  font-family: 'Clash Display';
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.green {
+  border-color: #08da08;
+  color: #08da08;
+}
+
+.red {
+  border-color: #da0808;
+  color: #da0808;
+}
+
+.blue {
+  border-color: #1e7ae4;
+  color: #1e7ae4;
+}
+
+.purple {
+  border-color: #6c0ee6;
+  color: #6c0ee6;
 }
