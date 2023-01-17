@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function Home() {
 
-  const [color, setColor] = useState(null);
+  const [color, setColor] = useState("red");
   const [title, setTitle] = useState("Software Engineer")
   const [currentIndex, setCurrentIndex] = useState(0);
   const colors = ["red", "green", "blue", "purple"];

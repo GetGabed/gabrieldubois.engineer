@@ -3,15 +3,20 @@ import { useEffect, useState } from "react";
 
 const About = () => {
     const [color, setColor] = useState("red");
-    if(typeof window !== 'undefined' && 'localStorage' in window){
-        setColor(JSON.parse(localStorage.getItem('color')));
-    }
+   
+        
+    useEffect(()=> {
+        const storedColor = localStorage.getItem('color');
+        if (storedColor) {
+          setColor(JSON.parse(storedColor));
+        }
+    })
 
     return (
         <>
         <Layout>
             <hr className={color}></hr>
-        <h1>It's my birthdayyyyy</h1>
+        <h1></h1>
 
         </Layout>
         </>

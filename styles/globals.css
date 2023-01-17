@@ -68,12 +68,14 @@
 .hero-p {
   font-family: 'Clash Display';
   font-weight: 700;
+}
+.txt-border{
   text-shadow:
-    1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+  1px 1px 0 #000,
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
 .hero-link {
