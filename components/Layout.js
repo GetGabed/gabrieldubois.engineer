@@ -2,6 +2,10 @@ import Header from "./Header";
 import Head from "next/head";
 import Footer from "./Footer";
 import { useRouter } from "next/router";
+import { useState } from "react";
+
+const LIGHT_THEME = "light"
+const DARK_THEME = "dark"
 
 const Layout = ({ children, pageMeta }) => {
 
@@ -15,7 +19,7 @@ const Layout = ({ children, pageMeta }) => {
     };
 
     return (
-        <div>
+        <div className="bg-custom-light h-screen dark:bg-custom-dark">
             <Head>
                 <title>{meta.title}</title>
                 <meta name="description" content={meta.description} />

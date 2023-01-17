@@ -87,12 +87,13 @@
   translate: 5%;
 }
 
+
 .underline-link{
   content: "";
   position: relative;
   width: 0px;
   height: 1px;
-  background: currentColor;
+  color: currentColor;
   transition: .4s;
 }
 .hero-link:hover .underline-link{

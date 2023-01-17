@@ -3,7 +3,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -11,6 +11,15 @@ module.exports = {
           100: '#121212'
         },
       },
+      backgroundImage:{
+        'custom-light': "url('/Mass Circles.svg')",
+        'custom-dark': "url('/Sprinkle.svg')",
+      }
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ["dark"],
     },
   },
   plugins: [],
