@@ -1,9 +1,10 @@
 import Layout from "@/components/Layout";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const About = () => {
+    const [color, setColor] = useState("red");
     if(typeof window !== 'undefined' && 'localStorage' in window){
-        const color = JSON.parse(localStorage.getItem('color'));
+        setColor(JSON.parse(localStorage.getItem('color')));
     }
 
     return (
