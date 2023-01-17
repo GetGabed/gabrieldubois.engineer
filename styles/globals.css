@@ -13,6 +13,22 @@
   font-style: medium;
   font-weight: 700;
   font-display: swap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .marquee {
@@ -26,14 +42,6 @@
   gap: 1rem;
 }
 
-.unselectable {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 .marquee-content {
   flex-shrink: 0;
@@ -45,6 +53,33 @@
   font-weight: 800;
   font-size: 4rem;
 }
+
+.hero {
+  position: relative;
+  top: calc(25vh);
+}
+
+.hero-txt {
+  font-family: 'Pacifico';
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.hero-p {
+  font-family: 'Clash Display';
+  font-weight: 700;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.hero-link {
+  font-weight: 400;
+}
+
 
 @keyframes scroll {
   from {
