@@ -80,6 +80,23 @@
 
 .hero-link {
   font-weight: 400;
+  transition: 0.5s;
+}
+.hero-link:hover {
+  position: relative;
+  translate: 5%;
+}
+
+.underline-link{
+  content: "";
+  position: relative;
+  width: 0px;
+  height: 1px;
+  background: currentColor;
+  transition: .4s;
+}
+.hero-link:hover .underline-link{
+  width: 148px;
 }
 
 

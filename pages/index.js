@@ -41,14 +41,18 @@ export default function Home() {
 
           <div className="flex">
             <ArrowLeftCircleIcon className={`w-10 cursor-pointer ${color}`} onClick={() => changeColor((currentIndex - 1 + colors.length) % colors.length)} />
-          <h1 className="hero-p text-6xl text-current">Hello, my name is Gabriel</h1>
+          <h1 className="hero-p text-6xl text-current unselectable">Hello, my name is Gabriel</h1>
             <ArrowRightCircleIcon className={`w-10 cursor-pointer ${color}`} onClick={() => changeColor((currentIndex + 1) % colors.length)} />
           </div>
             <Hero title={title} color={color} />
-          <div className="mt-1 flex items-center hero-link hover:border-b border-current">
+          <div className='hero-link'>
+            <div className="mt-1 flex items-center">
             <ArrowUturnRightIcon className='w-6 mr-2'></ArrowUturnRightIcon>
-            <Link className='text-2xl' href="/about">Learn more</Link>
+            <Link className='text-2xl unselectable' href="/about">Learn more</Link>
           </div>
+            <hr className='underline-link'/>
+            </div>
+          
 
         </div>
         <Marquee color={color} title={title}></Marquee>
