@@ -4,20 +4,33 @@ import Layout from '@/components/Layout'
 import { ArrowLeftCircleIcon, ArrowRightCircleIcon, ArrowUturnRightIcon } from '@heroicons/react/24/outline'
 import Marquee from '@/components/Marquee'
 import Hero from '@/components/Hero'
+import Link from 'next/link'
 
 export default function Home() {
 
-  const [color, setColor] = useState("red");
+  const [color, setColor] = useState(null);
   const [title, setTitle] = useState("Software Engineer")
   const [currentIndex, setCurrentIndex] = useState(0);
   const colors = ["red", "green", "blue", "purple"];
   const titles = ["Software Engineer", "Student", "Game Programmer", "Dreamer"];
+  
+  useEffect(() => {
+    const storedColor = localStorage.getItem('color');
+    const storedTitle = localStorage.getItem('title');
+    if (storedColor) {
+      setColor(JSON.parse(storedColor));
+      setTitle(JSON.parse(storedTitle));
+    }
+  }, []);
 
   function changeColor(newIndex) {
     setCurrentIndex(newIndex);
     setColor(colors[newIndex]);
     setTitle(titles[newIndex]);
+    localStorage.setItem('color', JSON.stringify(colors[newIndex]));
+    localStorage.setItem('title', JSON.stringify(titles[newIndex]));
   }
+
 
   return (
     <>
@@ -25,16 +38,16 @@ export default function Home() {
 
         <div className="flex flex-col items-center hero">
 
-          <h1 className="hero-p text-6xl text-current">Hello, the name's Gabriel</h1>
 
           <div className="flex">
             <ArrowLeftCircleIcon className={`w-10 cursor-pointer ${color}`} onClick={() => changeColor((currentIndex - 1 + colors.length) % colors.length)} />
-            <Hero title={title} color={color} />
+          <h1 className="hero-p text-6xl text-current">Hello, my name is Gabriel</h1>
             <ArrowRightCircleIcon className={`w-10 cursor-pointer ${color}`} onClick={() => changeColor((currentIndex + 1) % colors.length)} />
           </div>
+            <Hero title={title} color={color} />
           <div className="mt-1 flex items-center hero-link hover:border-b border-current">
             <ArrowUturnRightIcon className='w-6 mr-2'></ArrowUturnRightIcon>
-            <h1 className='text-2xl'>Learn more about the product that I am</h1>
+            <Link className='text-2xl' href="/about">Learn more</Link>
           </div>
 
         </div>
