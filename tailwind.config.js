@@ -12,7 +12,7 @@ module.exports = {
         },
       },
       backgroundImage:{
-        'custom-light': "url('/Mass Circles.svg')",
+        'custom-light': "url('/Squared.svg')",
         'custom-dark': "url('/Sprinkle.svg')",
       }
     },

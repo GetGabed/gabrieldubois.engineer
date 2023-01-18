@@ -15,8 +15,7 @@ const About = () => {
     return (
         <>
         <Layout>
-            <hr className={color}></hr>
-        <h1></h1>
+       
 
         </Layout>
         </>
