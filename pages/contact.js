@@ -1,7 +1,7 @@
-import Layout from "@/components/Layout";
+const { default: Layout } = require("@/components/Layout")
 import { useEffect, useState } from "react";
 
-const About = () => {
+const Contact = () => {
     const [color, setColor] = useState("red");
    
         
@@ -11,14 +11,13 @@ const About = () => {
           setColor(JSON.parse(storedColor));
         }
     })
-
     return (
         <>
         <Layout color={color}>
-       
+            <h1>Contact</h1>
         </Layout>
         </>
     )
 }
 
-export default About;
+export default Contact;

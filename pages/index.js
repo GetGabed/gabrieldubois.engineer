@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <>
-      <Layout>
+      <Layout color={color}>
 
         <div className="flex flex-col items-center hero">
 
@@ -48,9 +48,9 @@ export default function Home() {
           <div className='hero-link'>
             <div className="mt-1 flex items-center">
             <ArrowUturnRightIcon className='w-6 mr-2'></ArrowUturnRightIcon>
-            <Link className='text-2xl unselectable' href="/about">Learn more</Link>
+            <Link className='text-2xl unselectable sf-mono' href="/about">Learn more</Link>
           </div>
-            <hr className='underline-link'/>
+            <hr className={`underline-link ${color}`}/>
             </div>
           
 

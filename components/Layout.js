@@ -7,7 +7,7 @@ import { useState } from "react";
 const LIGHT_THEME = "light"
 const DARK_THEME = "dark"
 
-const Layout = ({ children, pageMeta }) => {
+const Layout = ({ children, pageMeta, color }) => {
 
     const router = useRouter();
 
@@ -27,7 +27,7 @@ const Layout = ({ children, pageMeta }) => {
                 <link rel="icon" href="/favicon.ico" />
                 <meta property="og:url" content={`http://localhost:3000${router.asPath}`} />
             </Head>
-            <Header />
+            <Header color={color} />
             <main>{children}</main>
             <Footer />
         </div>
