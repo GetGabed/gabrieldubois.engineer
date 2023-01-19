@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const About = () => {
     const [color, setColor] = useState("red");
@@ -15,7 +16,21 @@ const About = () => {
     return (
         <>
         <Layout color={color}>
-       
+            {/* //<LinkList/> */}
+            <div>
+                <div className="flex items-center text-xl mx-12 mb-12">
+                    
+                    <h1 className={`${color} sf-mono`}>01.</h1>
+                    <h1 className="sf-mono ml-4 font-bold text-2xl">About</h1>
+                    <hr className={`${color} ml-4 h-px w-1/2`}></hr>
+                </div>
+                <div className="flex">
+                    <p className="ml-16 mr-12 text-lg">Hello! My name is Gabriel and I take pleasure in developing features that will be used and appreciated by a handful of users. My passion for programming started in the mid 2010's as I was trying to understand how the games and websites I've been exploring were made.<br/><br/>
+                    Since these days, I've had the opportunity to participate to many <Link href='/experience' className={`${color} hover:border-b border-current`}>hackathons</Link>, work at a <Link href="https://www.ibwave.com" target="_blank" className={`${color} hover:border-b border-current`}>wireless network global leader</Link>, and create meaningful <Link href='/work' className={`${color} hover:border-b border-current`}>projects</Link> that improved my skills.
+                    </p>
+                    <div className="w-2/3 h-96 border border-white mr-16"></div>
+                </div>
+            </div>
         </Layout>
         </>
     )
