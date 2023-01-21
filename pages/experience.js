@@ -33,7 +33,7 @@ const Experience = () => {
                 />
             </div>
             <h1 className={`clash-display text-2xl txt-border font-bold text-white mt-24 mx-32`}>Hacks</h1>
-            <div className="flex flex-col mx-32">
+            <div className="flex flex-col mx-32 mb-12">
                 <WorkCard 
                 color={color}
                 title="ConUHacks VII" 
@@ -46,7 +46,7 @@ const Experience = () => {
                 <WorkCard 
                 color={color}
                 title="Gamerella" 
-                subtitle='"My first Game jam!"' 
+                subtitle='"Teamwork makes the dream work!"' 
                 description="This game Jam is where I learnt to work on a game with a team coming from different fields. We had artists, programmers and story tellers. As it was for most our first jam and because of time constraints, the project has been isolated to one level and one main mechanic."
                 startDate="Dec 22" 
                 location="Concordia, Montreal"
@@ -55,11 +55,20 @@ const Experience = () => {
                 <WorkCard 
                 color={color}
                 title="Englympics" 
-                subtitle='"My second edition"'
-                description="Yo" 
+                subtitle='"Too many choices"'
+                description="In this edition of Englympics, we had the choice to focus on either mobile app, website creation, AI, desktop app and a few more... I'll let you guess which ones we focused on." 
                 startDate="Oct 22" 
                 location="Concordia, Montreal"
-                link= ""
+                link= "https://ecaconcordia.ca/englympics/"
+                />
+                <WorkCard 
+                color={color}
+                title="HawkHacks" 
+                subtitle='"Bounding exp"'
+                description="My friends and I built a Discord bot in Python during this virtual hackathon, and we made it play with probabilities." 
+                startDate="May 22" 
+                location="Remote"
+                link= "https://hawkhacks.ca"
                 />
             </div>
             
