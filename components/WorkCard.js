@@ -5,6 +5,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 const WorkCard = ({color, title, subtitle, description, startDate, location, link = null }) => {
     return (
         <div>
+            <hr className={`${color}`} />
             <div className="flex justify-between">
                 <h1 className={`clash-display text-2xl mt-4 font-bold ${color}`}>{title}</h1>
                 <h1 className={`clash-display text-xl mt-4 font-medium ${color}`}>{startDate}</h1>
@@ -23,7 +24,6 @@ const WorkCard = ({color, title, subtitle, description, startDate, location, lin
             </div>
                ) : ('')
             }
-            <hr className={`${color}`} />
         </div>
     )
 }

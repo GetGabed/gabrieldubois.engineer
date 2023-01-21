@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider enableColorScheme={true} attribute="class">
-        <Component {...pageProps} />
+        <Component {...pageProps}/>
       </ThemeProvider>
     </>
   )
