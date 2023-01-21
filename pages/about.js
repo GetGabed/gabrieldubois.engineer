@@ -29,9 +29,12 @@ const About = () => {
                     Since these days, I've had the opportunity to participate to many <Link href='/experience' className={`${color} hover:border-b border-current`}>hackathons</Link>, work at a <Link href="https://www.ibwave.com" target="_blank" className={`${color} hover:border-b border-current`}>wireless network global leader</Link>, and create meaningful <Link href='/work' className={`${color} hover:border-b border-current`}>projects</Link> that improved my skills.
                     </p>
                     <div className="w-2/3 h-96 mr-16 flex flex-col items-center">
-                        <video className={`rounded-full border-2 ${color}`} autoplay="true" loop="true" src="/VideoAI.mp4"></video>
+                        <video className={`rounded-full border-2 ${color}`} muted="true" autoplay="true" loop="true" src="/VideoAI.mp4"></video>
                         <small className="sf-mono mt-4 text-center text-gray-400">Around 62% similarity, but hey we love AI here!</small>
                     </div>
+                </div>
+                <div className="flex items-center text-xl mx-12 mb-12">
+                    <hr className={`${color} ml-4 h-px w-1/2`}></hr>
                 </div>
             </div>
         </Layout>
