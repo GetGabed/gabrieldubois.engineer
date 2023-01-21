@@ -19,7 +19,7 @@ const Layout = ({ children, pageMeta, color }) => {
     };
 
     return (
-        <div className="bg-custom-light max-h-screen overflow-y-scroll dark:bg-custom-dark">
+        <div className="bg-custom-light h-screen overflow-y-scroll dark:bg-custom-dark">
             <Head>
                 <title>{meta.title}</title>
                 <meta name="description" content={meta.description} />
