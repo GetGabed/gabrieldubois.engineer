@@ -22,16 +22,16 @@
   cursor: pointer;
 }
 
-.ubuntu{
+.ubuntu {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.sf-mono{
+.sf-mono {
   font-family: 'SF Mono', sans-serif;
 }
 
-.clash-display{
-  font-family: 'Clash Display';
+.ai {
+  width: 36rem;
 }
 
 .unselectable {
@@ -81,40 +81,43 @@
   font-family: 'Clash Display';
   font-weight: 700;
 }
-.txt-border{
+
+.txt-border {
   text-shadow:
-  1px 1px 0 #000,
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .hero-link {
   font-weight: 400;
   transition: 0.5s;
 }
+
 .hero-link:hover {
   position: relative;
   translate: 5%;
 }
 
-
-.underline-link{
+.underline-link {
   content: "";
   position: relative;
   width: 0px;
   height: 1px;
-  
   transition: .4s;
 }
-.hero-link:hover .underline-link{
-  width: 180px;
+
+.hero-link:hover .underline-link {
+  width: 100%;
 }
 
+/*  */
 .menu-link {
   position: relative;
 }
+
 .menu-link:before {
   content: "";
   position: absolute;
@@ -125,6 +128,7 @@
   background-color: currentColor;
   transition: width 0.5s;
 }
+
 .menu-link:hover:before {
   width: 100%;
 }
