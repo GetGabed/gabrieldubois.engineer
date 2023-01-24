@@ -28,11 +28,22 @@ const About = () => {
                             <p className="ml-16 mr-12 text-lg mb-12">Hello! My name is Gabriel and I take     pleasure in developing features that will be used and appreciated by a handful of users. My passion for programming started in the mid 2010's as I was trying to understand how the games and websites I've been exploring were made.<br /><br />
                                 Since these days, I've had the opportunity to participate in many <Link href='/experience' className={`${color} hover:border-b border-current`}>hackathons</Link>, work at a <Link href="https://www.ibwave.com" target="_blank" className={`${color} hover:border-b border-current`}>wireless network global leader</Link>, and create meaningful <Link href='/work' className={`${color} hover:border-b border-current`}>projects</Link> that improved my skills.
                             </p>
-                            <hr className={`${color} ml-4 h-px w-1/2`}></hr>
+                            <div classname="">
+                                <h1 className={`clash-display text-2xl txt-border font-bold text-white mt-12 ml-16`}>WEB</h1>
+                                <hr className={`${color} ml-16 h-px w-1/2`}></hr>
+                                <div className="ml-20 mt-12 flex">
+
+                                    
+                                    <div className={`p-4 rounded-full ${color} border`}>
+                                        <i className={`devicon-javascript-plain colored text-5xl rounded-md`}/>
+                                    </div>
+          
+                                </div>
+                            </div>
                         </div>
 
                         <div className="pr-16 flex flex-col items-center transition-all">
-                            <video className={`rounded-full border-2 ${color} ai`} muted="true" autoplay="true" loop="true" src="/VideoAI.mp4"></video>
+                            <video className={`rounded-full border-4 dark:border-2 ${color} ai`} muted="true" autoplay="true" loop="true" src="/VideoAI.mp4"></video>
                             <small className="sf-mono mt-4 text-center text-gray-400">Around 62% similarity, but hey we love AI here!</small>
                         </div>
                     </div>
