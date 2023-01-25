@@ -38,7 +38,7 @@ const Experience = () => {
                 color={color}
                 title="ConUHacks VII" 
                 subtitle='"Overnight sweat"' 
-                description="Upcoming"
+                description="Worked on a blockchain application, implementing Hedera as a challenge. This was a great learning, as I got to understand how the transactions happen in it, and how the messages are encrypted."
                 startDate="Jan 23" 
                 location="Concordia, Montreal"
                 link= "https://conuhacks.io"

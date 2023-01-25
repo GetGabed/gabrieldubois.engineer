@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
+import { MoonIcon, SunIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline'
 import { useState, useEffect } from "react";
 
 const Header = ({color}) => {
@@ -44,6 +44,9 @@ const Header = ({color}) => {
                     <Link href="/work" className="flex menu-link"><p className={color}>03.</p><h1 className="ml-2 mr-6">Work</h1></Link>
                     <Link href="/contact" className="flex menu-link"><p className={color}>04.</p><h1 className={`mx-2 mr-6 hover:`}>Contact</h1></Link>
                     </div>
+                <button className={`${color} border-2 w-10 p-1.5 mr-4 rounded-full transition duration-300`} onClick={() => setTheme('dark')}>
+                    <ArrowDownTrayIcon />
+                </button>
                 {renderThemeChanger()}
                 </div>
             </div>
