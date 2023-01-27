@@ -23,8 +23,8 @@ const Work = () => {
             <MainProject 
             image="/projects/CoursesDB.png" 
             title="CoursesDB"
-            techs={["fun", "lol", "hihi", "uwu"]}
-            description="Ceci  est une description pour tester"
+            techs={["VS Code", "NextJS", "MongoDB", "NodeJS"]}
+            description="A fullstack application created for the purpose of giving the opportunity to students to share and read summaries of courses they are or will be taking. Everyone can create an account, and when given the right, can also write a summary."
             color={color}/>
         </Layout>
         </>
