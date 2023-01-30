@@ -138,6 +138,10 @@
   width: 100%;
 }
 
+.projpic:hover {
+  filter: blur(1px);
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);
