@@ -18,7 +18,7 @@ const MainProject = ({ image, title, description, github, link = "work", techs, 
                 <>
                     <div className="flex justify-center -ml-8">
                         <Link href={link} className={link == 'work' ? "cursor-default z-0 " : 'z-0'}>
-                            <Image src={image} width={700} height={700} className="object-contain projpic duration-500 -mr-12 rounded-2xl " />
+                            <Image src={image} width={700} height={700} className="object-contain duration-500 -mr-12 rounded-2xl " />
                         </Link>
                     </div>
                     <div className="clash-display -ml-12 z-10">
@@ -32,7 +32,7 @@ const MainProject = ({ image, title, description, github, link = "work", techs, 
                                 <div className="flex flex-1 justify-end items-center ">
                                     {github ? (
                                         <Link href={github} className="hover:mr-1 duration-500" >
-                                            <i className={`devicon-github-original text-3xl hover:text-white  transition-colors ml-4 ${color}`} />
+                                            <i className={`devicon-github-original text-3xl hover:text-white font-medium transition-colors ml-4 ${color}`} />
                                         </Link>
                                     ) : ""}
                                     {link ? (
@@ -69,7 +69,7 @@ const MainProject = ({ image, title, description, github, link = "work", techs, 
                         </div>
                     </div>
                     <div className="flex justify-center z-0 -ml-8">
-                        <Link href={link} className={link == 'work' ? "cursor-default" : ''}>
+                        <Link href={link} className={link == 'work' ? "cursor-default" : 'duration-500 hover:brightness-90'}>
                             <Image src={image} width={700} height={700} className="object-contain mr-12 rounded-2xl " />
                         </Link>
 
