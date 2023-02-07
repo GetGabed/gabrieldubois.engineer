@@ -36,6 +36,15 @@ const Experience = () => {
             <div className="flex flex-col mx-32 mb-12">
                 <WorkCard 
                 color={color}
+                title="UpStart 2023" 
+                subtitle='"CEO Vibes"' 
+                description="Along with three other colleagues, I created a startup where we would create a web application offering consultation services that would help managers create a better work environment, with the help of industrial-organizational psychologists."
+                startDate="Feb 23" 
+                location="Concordia, Montreal"
+                link= "https://devpost.com/software/workease?ref_content=my-projects-tab&ref_feature=my_projects"
+                />
+                <WorkCard 
+                color={color}
                 title="ConUHacks VII" 
                 subtitle='"Overnight sweat"' 
                 description="Worked on a blockchain application, implementing Hedera as a challenge. This was a great learning, as I got to understand how the transactions happen in it, and how the messages are encrypted."
