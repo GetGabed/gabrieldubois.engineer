@@ -2,12 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+div {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
 .ubuntu {
   font-family: 'Ubuntu', sans-serif;
 }
 
 .clash-display {
   font-family: 'Clash Display';
+}
+
+.sf-mono {
+  font-family: 'SF Mono', monospace;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @layer components {
