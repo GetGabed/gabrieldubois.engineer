@@ -18,7 +18,7 @@ const ThemeSwitch = () => {
 
     if (currentTheme == 'dark') {
         return (
-            <button className="w-10 p-1.5 bg-white rounded-full text-black-100 transition rotate-180 duration-300" role="button" onClick={() => setTheme('light')}>
+            <button className="w-10 p-1.5 bg-white rounded-full text-black-100 transition rotate-180 hover:-rotate-12 duration-300" role="button" onClick={() => setTheme('light')}>
                 <SunIcon />
             </button>
 
@@ -26,7 +26,7 @@ const ThemeSwitch = () => {
     }
     else {
         return (
-            <button className="w-10 p-1.5 rotate-12 bg-black-100 rounded-full text-white transition duration-300" onClick={() => setTheme('dark')}>
+            <button className="w-10 p-1.5 rotate-12 bg-black-100 rounded-full text-white transition hover:-rotate-12 duration-300" onClick={() => setTheme('dark')}>
                 <MoonIcon />
             </button>
         )

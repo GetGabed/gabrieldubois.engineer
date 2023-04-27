@@ -1,6 +1,7 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
+import HoverSocialIcons from './HoverSocialIcons'
 
 type Props = {}
 
@@ -20,14 +21,13 @@ export default function Footer({ }: Props) {
                     duration: 1.2
                 }}
                 className='pl-5 flex flex-col z-20' >
-                <SocialIcon url="https://www.linkedin.com/in/gabriel-dubois-soen" fgColor='gray' bgColor='transparent' />
-                <SocialIcon url="https://www.youtube.com" fgColor='gray' bgColor='transparent' />
-                <SocialIcon url="https://twitter.com/Adissuu_SOEN" fgColor='gray' bgColor='transparent' />
-                <SocialIcon
-                    className="cursor-pointer"
+                <HoverSocialIcons url="https://www.linkedin.com/in/gabriel-dubois-soen" />
+                <HoverSocialIcons url="https://www.youtube.com" />
+                <HoverSocialIcons url="https://twitter.com/Adissuu_SOEN" />
+                <HoverSocialIcons
                     network='email'
-                    fgColor='gray'
-                    bgColor='transparent'
+                    url='#contact'
+                    target=''
                 />
             </motion.div>
         </footer>

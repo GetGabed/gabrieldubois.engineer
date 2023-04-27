@@ -1,5 +1,4 @@
 import { NextPage } from 'next'
-import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '@/components/UI/Layout'
 import Hero from '@/components/Hero'
@@ -11,7 +10,7 @@ import ContactMe from '@/components/ContactMe'
 
 const Home: NextPage = () => {
   return (
-    <div className='h-screen bg-light dark:bg-dark snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='h-screen bg-light dark:bg-dark snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0'>
       <Head>
         <title>Gabriel Dubois</title>
       </Head>

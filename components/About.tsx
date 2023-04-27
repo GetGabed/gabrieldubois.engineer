@@ -7,7 +7,7 @@ type Props = {}
 
 function About({ }: Props) {
     return (
-        <div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-2-7xl mx-16 justify-evenly mx-auto items-center'>
+        <div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-2-7xl px-16 justify-evenly mx-auto items-center'>
             <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl'>About</h3>
             <motion.div
                 initial={{
