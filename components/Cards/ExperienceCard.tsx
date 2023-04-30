@@ -3,11 +3,32 @@ import { motion } from "framer-motion"
 import Image from 'next/image'
 import profile from '../../public/Profile.png'
 
-type Props = {}
+type Props = {
+    image: string;
+    title: string;
+    techs: string[];
+    bullets: string[];
+    company: string;
+    date: string;
+}
 
-function ExperienceCard({ }: Props) {
+function ExperienceCard({ company, title, image, date, techs, bullets }: Props) {
+    const showAllTechs = () => {
+        return techs.map((t, name) => (
+            <li className="mr" key={name}>
+                <i className={`${t} text-white`} />
+            </li>
+        ));
+    };
+    const showAllBullets = () => {
+        return bullets.map((b, name) => (
+            <li className="mr-2" key={name}>
+                {b}
+            </li>
+        ));
+    };
     return (
-        <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-dark-light hover:opacity-100 opacity-40 cursor-grabbing transition-opacity duration-200 overflow-hidden'>
+        <article className='flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-dark-light hover:opacity-100 opacity-40 transition-opacity duration-200 overflow-hidden'>
             <motion.div
                 initial={{
                     y: -100,
@@ -18,21 +39,17 @@ function ExperienceCard({ }: Props) {
                     duration: 1.1
                 }}
                 viewport={{ once: true }}>
-                <Image src={profile} alt={'temp work image'} className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center' />
+                <img loading='lazy' src={image} alt={'Past experience'} className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center' />
             </motion.div>
             <div className='px-0 md:px-10 unselectable'>
-                <h4 className='text-4xl text-red-500 pacifico font-light'>Developer</h4>
-                <p className='font-bold ubuntu text-2xl mt-1'>Gabriel Company</p>
-                <div className='flex space-x-2 my-2'>
-                    <Image src={profile} alt='tech used' className='h-10 w-10 rounded-full' />
-                    <Image src={profile} alt='tech used' className='h-10 w-10 rounded-full' />
-                    <Image src={profile} alt='tech used' className='h-10 w-10 rounded-full' />
+                <h4 className='text-4xl text-primary pacifico font-light'>{title}</h4>
+                <p className='font-bold ubuntu text-white text-2xl mt-1'>{company}</p>
+                <div className='flex list-none space-x-2 mt-2'>
+                    {showAllTechs()}
                 </div>
-                <p className='uppercase sf-mono py-5 text-red-500'>Dec 2023 - Present</p>
-                <ul className='list-disc space-y-4 ml-5 text-lg'>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
+                <p className='uppercase sf-mono py-3 text-primary'>{date}</p>
+                <ul className='list-disc text-white sf-mono space-y-3 ml-5 text-sm'>
+                    {showAllBullets()}
                 </ul>
             </div>
         </article>

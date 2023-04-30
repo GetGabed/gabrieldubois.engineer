@@ -18,11 +18,11 @@ function BackgroundSquares({ }: Props) {
                 duration: 3,
             }}
             className='relative flex justify-center items-center'>
-            <div className='absolute border border-red-500 h-[200px] w-[200px] mt-52 delay-1000 animate-ping' />
-            <div className='absolute border opacity-40 animate-pulse  border-red-500 h-[300px] w-[300px] mt-52' />
-            <div className='absolute border opacity-30 animate-pulse  border-red-500 h-[500px] w-[500px] mt-52 ' />
-            {/* <div className='absolute border border-red-500 h-[650px] w-[650px] mt-52 animate-pulse opacity-20' /> */}
-            <div className='absolute border opacity-20 animate-pulse border-red-500 h-[800px] w-[800px] mt-52' />
+            <div className='absolute border border-primary h-[200px] w-[200px] mt-52 delay-1000 animate-ping' />
+            <div className='absolute border opacity-40 animate-pulse  border-primary h-[300px] w-[300px] mt-52' />
+            <div className='absolute border opacity-30 animate-pulse  border-primary h-[500px] w-[500px] mt-52 ' />
+            {/* <div className='absolute border border-primary h-[650px] w-[650px] mt-52 animate-pulse opacity-20' /> */}
+            <div className='absolute border opacity-20 animate-pulse border-primary h-[800px] w-[800px] mt-52' />
         </motion.div>
     )
 }

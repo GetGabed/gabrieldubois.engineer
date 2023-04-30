@@ -23,6 +23,11 @@ div {
   font-family: 'Pacifico', cursive;
 }
 
+@layer base{
+  :root{
+          --color-primary: #EF4444;
+  }
+}
 
 .unselectable {
   -webkit-touch-callout: none;
@@ -35,11 +40,11 @@ div {
 
 @layer components {
   .heroButton {
-    @apply px-6 py-2 rounded-full text-sm uppercase tracking-widest transition-all hover:text-red-500
+    @apply px-6 py-2 rounded-full text-sm uppercase tracking-widest transition-all
   }
   
   .contactInput {
-    @apply outline-none bg-[#e6e8ea] dark:bg-[#1d1f21] rounded-sm px-6 py-4 border-b border-red-500 text-gray-500 placeholder-gray-500 transition-all focus:border-red-500/50 focus:text-current hover:border-red-500/50
+    @apply outline-none bg-[#e6e8ea] dark:bg-[#1d1f21] rounded-sm px-6 py-4 border-b border-primary text-gray-500 placeholder-gray-500 transition-all focus:border-primary focus:border-opacity-50 focus:text-current hover:border-primary hover:border-opacity-50
   }
 }
 /* 1d1f21 */
@@ -78,3 +83,21 @@ div {
   font-weight: 800;
   font-size: 4rem;
 }
+
+
+
+    .theme-yellow {
+      --color-primary: #FBBF24;
+    }
+  
+    .theme-red {
+      --color-primary: #EF4444;
+    }
+  
+    .theme-blue {
+      --color-primary: #3B82F6;
+    }
+  
+    .theme-green {
+      --color-primary: #10B981;
+    }

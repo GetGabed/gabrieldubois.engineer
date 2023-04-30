@@ -8,22 +8,25 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      textColor: {
+        skin: {
+          primary: "var(--color-primary)"
+        }
+      },
       colors: {
         'black': {
-          100: '#121212'
+          100: '#121212',
         },
+        primary: 'var(--color-primary)'
       },
       backgroundColor: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'light': "#efefef",
         'dark': "#101010",
         'dark-light': "#151515"
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar"), require('@headlessui/tailwindcss')],
   layers: {
     'hover': ['responsive'],
   },
