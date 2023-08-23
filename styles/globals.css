@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.clash-display {
+  font-family: 'Clash Display';
+}
+
+.sf-mono {
+  font-family: 'SF Mono', monospace;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+@layer base{
+  :root{
+          --color-primary: #EF4444;
+  }
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 rounded-full text-sm uppercase tracking-widest transition-all
+  }
+  
+  .contactInput {
+    @apply outline-none bg-[#e6e8ea] dark:bg-[#1d1f21] rounded-sm px-6 py-4 border-b border-primary text-gray-500 placeholder-gray-500 transition-all focus:border-primary focus:border-opacity-50 focus:text-current hover:border-primary hover:border-opacity-50
+  }
+}
+/* 1d1f21 */
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.marquee {
+  position: absolute;
+  width: 110vw;
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+  font-family: 'Clash Display';
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+
+
+    .theme-yellow {
+      --color-primary: #FBBF24;
+    }
+  
+    .theme-red {
+      --color-primary: #EF4444;
+    }
+  
+    .theme-blue {
+      --color-primary: #3B82F6;
+    }
+  
+    .theme-green {
+      --color-primary: #10B981;
+    }
