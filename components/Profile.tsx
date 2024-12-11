@@ -16,8 +16,6 @@ import {
 } from '@tabler/icons-react';
 import Ping from './ui/Ping';
 
-type Props = {}
-
 const people = [
   {
     id: 1,
@@ -28,7 +26,7 @@ const people = [
   },
 ]
 
-function Profile({}: Props) {
+function Profile() {
   return (
     <div className='border border-[#a2a7fb] p-6 rounded-md w-full frosted-glass'>
         <div className="flex justify-between">

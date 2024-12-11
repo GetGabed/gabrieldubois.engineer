@@ -8,13 +8,12 @@ export function Navbar() {
 
   const handleMouseOver = () => {
     const originalText = "DUB35";
-    let interval;
     let deciphered = "";
 
-    interval = setInterval(() => {
+    const interval = setInterval(() => {
       deciphered = originalText
         .split("")
-        .map((char, i) =>
+        .map((char) =>
           Math.random() > 0.5
             ? String.fromCharCode(33 + Math.floor(Math.random() * 94))
             : char

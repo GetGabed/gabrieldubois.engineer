@@ -3,15 +3,13 @@ import Link from 'next/link'
 import { ProjectCard } from './ui/project-card'
 import { DATA } from '../data/resume'
 import {IconArrowNarrowRight} from "@tabler/icons-react"
-type Props = {}
 
-
-function Projects({}: Props) {
+function Projects() {
   return (
     <div className='mt-12 mb-20'>
         <h1 className='text-2xl mb-4'>Debug Diaries (Projects)</h1>
         <div className='flex gap-2'>
-            {DATA.projects.slice(0, 2).map((project, id) => (
+            {DATA.projects.slice(0, 2).map((project) => (
               <ProjectCard
                 href={project.href}
                 key={project.title}

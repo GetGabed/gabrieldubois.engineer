@@ -42,7 +42,7 @@ const backendSkills = [
 function Skills() {
   return (
     <div className='mt-12'>
-        <h1 className='text-2xl mb-4'>What's the tech mate?</h1>
+        <h1 className='text-2xl mb-4'>What&#39;s the tech mate?</h1>
         <Marquee autoFill gradient gradientColor='#0a0a0a' gradientWidth={20} pauseOnHover>
             {frontendSkills.map((skill, index) => (
                 <div key={index} className="flex gap-2 mr-6">

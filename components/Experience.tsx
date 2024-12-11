@@ -1,10 +1,9 @@
 import React from 'react'
 import { TimelineLayout } from './ui/timeline-layout'
-type Props = {}
 
-function Experience({}: Props) {
+function Experience() {
   return (
-    <div className='mt-12 mb-12'>
+    <div className='mt-12'>
         <h1 className='text-2xl -mb-4'>Professional Lore</h1>
       <TimelineLayout />
     </div>

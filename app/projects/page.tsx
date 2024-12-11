@@ -14,7 +14,7 @@ export default function ProjectsPage() {
       initial={fadeInUp.initial}
       animate={fadeInUp.animate}
       transition={{ ...fadeInUp.transition, delay: 0.1 }}>
-        {DATA.projects.map((project, id) => (
+        {DATA.projects.map((project) => (
             <ProjectCard
             href={project.href}
             key={project.title}
