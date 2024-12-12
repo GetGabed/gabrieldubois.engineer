@@ -22,7 +22,7 @@ export const DATA = {
             },
         ],
         image: "",
-        video: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/Simulvolve.mp4`,
+        video: `/gabrieldubois.engineer/Simulvolve.mp4`,
     },
     {
         title: "AdvancedWarpCore",
@@ -39,7 +39,7 @@ export const DATA = {
         ],
         image: "",
         video:
-            "/AdvancedWarpCore.mp4",
+            "/gabrieldubois.engineer/AdvancedWarpCore.mp4",
     },
     {
         title: "CondoVision",
@@ -59,7 +59,7 @@ export const DATA = {
                 icon: <IconBrandGithub className="size-3" />,
             },
         ],
-        image: "/Condovision.png",
+        image: "/gabrieldubois.engineer/Condovision.png",
         video:
             "",
     },
