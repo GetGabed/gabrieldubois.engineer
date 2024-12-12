@@ -22,7 +22,7 @@ export const DATA = {
             },
         ],
         image: "",
-        video: "/Simulvolve.mp4",
+        video: "public/Simulvolve.mp4",
     },
     {
         title: "AdvancedWarpCore",
