@@ -22,7 +22,7 @@ export const DATA = {
             },
         ],
         image: "",
-        video: "/Simulvolve.mp4",
+        video: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/Simulvolve.mp4`,
     },
     {
         title: "AdvancedWarpCore",
