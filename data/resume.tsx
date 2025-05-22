@@ -16,7 +16,7 @@ export const DATA = {
                     icon: <IconBrandGithub className="size-3" />,
                 },
             ],
-            image: "/gabrieldubois.engineer/Crim.png",
+            image: "/gabrieldubois.engineer/Crim.jpg",
             video: "",
         },
         {
