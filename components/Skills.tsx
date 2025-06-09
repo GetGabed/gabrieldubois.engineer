@@ -14,6 +14,7 @@ import {
     IconBrandAws as AwsIcon,
     IconBrandGit as GitIcon,
     IconBrandNextjs as NextjsIcon,
+    IconDiamond as RailsIcon,
 } from '@tabler/icons-react';
 import Marquee from "react-fast-marquee";
 
@@ -36,6 +37,7 @@ const backendSkills = [
     { icon: AzureIcon, name: 'Azure' },
     { icon: DockerIcon, name: 'Docker' },
     { icon: CSharpIcon, name: 'C#' },
+    { icon: RailsIcon, name: 'Ruby on Rails' },
 ];
 
 
