@@ -48,7 +48,7 @@ function Profile() {
                 <Link href="mailto:gabrieldubois.eng@gmail.com" target='_blank' className='rounded-[10px] p-2 border border-gray-700 hover:border-primary group'>
                     <IconMail className='group-hover:text-primary'/>
                 </Link>
-                <Link href="https://github.com/Adissuu" target='_blank' className='rounded-[10px] p-2 border border-gray-700 hover:border-primary group'>
+                <Link href="https://github.com/GetGabed" target='_blank' className='rounded-[10px] p-2 border border-gray-700 hover:border-primary group'>
                     <IconBrandGithub className='group-hover:text-primary'/>
                 </Link>
                 <Link href="https://www.linkedin.com/in/gabriel-dubois-soen/" target='_blank' className='rounded-[10px] p-2 border border-gray-700 hover:border-primary group'>
