@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 const {
   default: flattenColorPalette,
@@ -10,6 +11,7 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./content/**/*.{md,mdx}",
   ],
   darkMode: "class",
   theme: {
@@ -21,7 +23,7 @@ export default {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [typography, addVariablesForColors],
 
 } satisfies Config;
 

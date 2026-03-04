@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Background } from "../components/ui/Background";
+import { LazyBackground } from "../components/ui/LazyBackground";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
@@ -19,8 +19,8 @@ export default function RootLayout({
       <body
         className={`antialiased overflow-y-scroll`}>
         <div className="relative w-full h-full league">
-          <Background />
-          <div className="max-w-xl w-full mx-auto absolute left-1/2 transform -translate-x-1/2 z-10 md:text-md ">
+          <LazyBackground />
+          <div className="max-w-xl w-full mx-auto absolute left-1/2 transform -translate-x-1/2 z-10 md:text-md px-3 sm:px-0">
             <div className="mt-8" id="navbar">
               <Navbar />
             </div>

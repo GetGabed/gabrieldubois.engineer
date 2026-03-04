@@ -9,13 +9,13 @@ export default function Home() {
   const fadeInUp = {
     initial: { opacity: 0, y: 20 }, // Start faded out and slightly below
     animate: { opacity: 1, y: 0 }, // Fade in and move to original position
-    transition: { duration: 0.25, ease: "easeOut" }, // Smooth transition
+    transition: { duration: 0.25, ease: "easeOut" as const }, // Smooth transition
   };
 
   return (
     <>
       <motion.div
-        className="mt-8 mx-2"
+        className="mt-8"
         id="profile"
         initial={fadeInUp.initial}
         animate={fadeInUp.animate}

@@ -6,6 +6,7 @@ import {
   TimelineTime,
   TimelineHeader,
 } from '@/components/ui/timeline';
+import Image from 'next/image';
 
 type TimelineItemType = {
   id: number;
@@ -25,7 +26,7 @@ const timelineData: TimelineItemType[] = [
     `,
     time: 'Jan. 2026 – Present',
     link: "https://www.shopify.com",
-    icon: "/gabrieldubois.engineer/svg/shopify_glyph.svg",
+    icon: "/svg/shopify_glyph.svg",
   },
   {
     id: 2,
@@ -35,7 +36,7 @@ const timelineData: TimelineItemType[] = [
     `,
     time: 'May 2025 – Aug. 2025',
     link: "https://www.shopify.com",
-    icon: "/gabrieldubois.engineer/svg/shopify_glyph.svg",
+    icon: "/svg/shopify_glyph.svg",
   },
   {
     id: 3,
@@ -45,7 +46,7 @@ const timelineData: TimelineItemType[] = [
     `,
     time: 'May 2024 – Apr. 2025',
     link: "https://www.ubisoft.com",
-    icon: "/gabrieldubois.engineer/svg/ubisoft.svg",
+    icon: "/svg/ubisoft.svg",
   },
   {
     id: 4,
@@ -77,10 +78,12 @@ export const TimelineLayout = () => {
             <TimelineTitle href={item.link}>
               {item.title}
               {item.icon && (
-                <img
+                <Image
                   src={item.icon}
                   alt={`${item.title} icon`}
-                  className="inline-block ml-2 mb-2 w-6 h-6"
+                  width={24}
+                  height={24}
+                  className="inline-block ml-2 mb-2"
                 />
               )}
             </TimelineTitle>

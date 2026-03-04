@@ -16,7 +16,7 @@ export const DATA = {
                     icon: <IconBrandGithub className="size-3" />,
                 },
             ],
-            image: "/gabrieldubois.engineer/Crim.png",
+            image: "/Crim.png",
             video: "",
         },
         {
@@ -38,7 +38,7 @@ export const DATA = {
                 },
             ],
             image: "",
-            video: `/gabrieldubois.engineer/Simulvolve.mp4`,
+            video: `/Simulvolve.mp4`,
         },
         {
             title: "AdvancedWarpCore",
@@ -55,7 +55,7 @@ export const DATA = {
             ],
             image: "",
             video:
-                "/gabrieldubois.engineer/AdvancedWarpCore.mp4",
+                "/AdvancedWarpCore.mp4",
         },
         {
             title: "CondoVision",
@@ -75,7 +75,7 @@ export const DATA = {
                     icon: <IconBrandGithub className="size-3" />,
                 },
             ],
-            image: "/gabrieldubois.engineer/Condovision.png",
+            image: "/Condovision.png",
             video:
                 "",
         },

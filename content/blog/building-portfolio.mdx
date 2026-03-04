@@ -1,0 +1,42 @@
+---
+title: "Building a Blazingly Fast Portfolio with Next.js 15"
+date: "2026-03-01"
+description: "How I built this portfolio — the architecture decisions, performance tricks, and the stack behind it."
+tags: ["Next.js", "Performance", "TailwindCSS"]
+---
+
+## Why I rebuilt the portfolio
+
+I've been meaning to overhaul my personal site for a while. The old one was a basic create-react-app SPA — works, but leaves a lot on the table for performance and SEO.
+
+The new one is a **statically exported Next.js 16** app, deployed on GitHub Pages. No server costs, near-instant loads, and a clean developer experience.
+
+## The stack
+
+| Layer | Choice | Why |
+|---|---|---|
+| Framework | Next.js 15 (App Router) | RSC, file-based routing, static export |
+| Styling | TailwindCSS | Utility-first, no runtime overhead |
+| Animations | Framer Motion | Declarative, production-ready |
+| Icons | Tabler Icons | Consistent, tree-shakeable |
+
+## Performance tricks
+
+The biggest win was **lazy-loading the animated background**. The shooting stars and star field run canvas/SVG animation loops — pretty, but not something that should block the first paint.
+
+```tsx
+const Background = dynamic(
+  () => import("../components/ui/Background").then((m) => m.Background),
+  { ssr: false }
+);
+```
+
+This defers the entire animation bundle and lets the page content render immediately.
+
+The other trick: `will-change: transform` on the canvas and SVG elements to hint the GPU to composite them on a separate layer, keeping the rest of the page stutter-free.
+
+## What's next
+
+- Adding more projects
+- Expanding the blog (you're reading it!)
+- Dark theme polish

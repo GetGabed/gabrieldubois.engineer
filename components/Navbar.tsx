@@ -34,6 +34,9 @@ export function Navbar() {
         {text}
       </Link>
       <div className="flex space-x-4">
+        <Link href="/blog" className="text-lg">
+          blog
+        </Link>
         <Link href="/projects" className="text-lg">
           projects
         </Link>

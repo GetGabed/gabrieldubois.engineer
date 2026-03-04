@@ -8,7 +8,7 @@ function Projects() {
   return (
     <div className='mt-12 mb-20'>
         <h1 className='text-2xl mb-4'>Debug Diaries (Projects)</h1>
-        <div className='flex gap-2'>
+        <div className='grid grid-cols-2 gap-2'>
             {DATA.projects.slice(0, 2).map((project) => (
               <ProjectCard
                 href={project.href}
